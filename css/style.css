@@ -538,7 +538,7 @@ a {
   color: #333;
 }
 @font-face {
-  font-family: a;
+  font-family: NotoSansCJKsc-Light;
   font-style: normal;
   src: url("fonts/NotoSansCJKsc-Light.otf");
 }
@@ -548,7 +548,7 @@ body,
   height: 100%;
 }
 body {
-  font-family: "微软雅黑";
+  font-family: NotoSansCJKsc-Light;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
 }
