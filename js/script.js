@@ -66,12 +66,28 @@
 			//backToTop.fadeOut();
 		}
 
-/*		if ($(window).scrollTop()>176) {
+
+/*		if ($(window).scrollTop()>0) {
 
 			$headerNav.fadeIn();
+			console.log($(window).scrollTop())
 		}else{
 			$headerNav.fadeOut();
 		}*/
+		var before = $(window).scrollTop();
+		$(window).scroll(function() {
+            var after = $(window).scrollTop();
+            if (before<after) {
+            	//$headerNav.fadeOut();
+            	$headerNav.css("display","none");
+                before = after;
+            }
+            else if (before>after) {
+            	//$headerNav.fadeIn();
+            	$headerNav.css("display","block");
+                before = after;
+            }
+        });
 
 		checkShow();
 	});
